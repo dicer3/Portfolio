@@ -75,8 +75,8 @@ const About = () => {
                 <h6 className="about__heading">What I offer</h6>
                 <div className="row">
                     {
-                        skills.map(skill =>
-                            <Skillcard skill={skill} />
+                        skills.map((skill, i) =>
+                            <Skillcard skill={skill} key={i} />
 
                         )
                     }

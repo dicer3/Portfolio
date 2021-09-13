@@ -188,7 +188,6 @@ a:hover {
 
 .resume-card__heading,
 .reume-language__heading {
-    margin-left: 10px;
     font-size: 1.6rem;
     font-weight: 700;
     color: #354538;
@@ -220,6 +219,25 @@ a:hover {
 
 }
 
+.exp-time{
+    font-size: 14px;
+    color:#00F260
+}
+
+.exp-pos{
+    color: #5F9EA0;
+}
+
+.tech-used{
+    color:#2F4F4F;
+    font-size: 14px;
+}
+
+.exp-work{
+    color:#B8860B;
+    font-size: 14px;
+    line-height: 15px;
+}
 .bar__icon {
     width: 15px;
     height: 15px;

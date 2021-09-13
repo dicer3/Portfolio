@@ -1,9 +1,8 @@
 import React from 'react';
-
-
-import Skillcard from './../Skillcard';
 import { motion } from 'framer-motion'
-import skills from './../data/about_data'
+import Bar from '../Bar';
+import { languages } from '../data/resume_data'
+import experiences from '../data/experience'
 import './about.css'
 
 const About = () => {
@@ -33,17 +32,41 @@ const About = () => {
             exit="exit"
         >
             <h6 className="about__intro">
-                I describe myself as someone who's persistant, a quick learner and loves problem solving by using simple and scalable solutions.
+                Hi ! I am Pragun Gandotra , Thankyou for visiting my Website . I provide Web Development Services , Looking forward to provide you service
             </h6>
-            <div className="container about__container">
-                <h6 className="about__heading">What I offer</h6>
-                <div className="row">
+            <div className="row no-gutters px-3">
+                <div className="col-lg-6 resume-languages pl-4">
+                    <h5 className="reume-language__heading">
+                        Skills
+                    </h5>
+                    <div className="resume-language__body mt-3">
+                        {
+                            languages.map((language, i) => <Bar value={language} key={i} />)
+                        }
+                    </div>
+                </div>
+                <div className="col-lg-6 resume-languages">
+                    <h5 className="reume-language__heading">
+                        Experience
+                    </h5>
                     {
-                        skills.map(skill =>
-                            <Skillcard skill={skill} />
-
+                        experiences.map((exp) =>
+                            <div>
+                                <div className="d-flex justify-content-between">
+                                    <div ><span className="font-weight-bold"> {exp.company}</span> <small className="exp-pos">{exp.position}</small></div>  <span className="exp-time">{exp.time}</span>
+                                </div>
+                                <span className="exp-work">{exp.work}</span>
+                                <p className="tech-used">Technologies Used - {exp.TechUsed}</p>
+                            </div>
                         )
                     }
+
+                    <h5 className="reume-language__heading">
+                        Education
+                    </h5>
+                    <div className="d-flex justify-content-between">
+                        <div ><span className="font-weight-bold"> Thapar University ,Patiala</span> </div>  <span className="exp-time">Aug 2016 - June 2020</span>
+                    </div>
                 </div>
             </div>
         </motion.div>
