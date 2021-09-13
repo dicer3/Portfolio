@@ -3,7 +3,6 @@ import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar';
 import { Route, Redirect, Switch, useLocation } from 'react-router-dom';
 import About from './components/about/About';
-import Resume from './components/Resume';
 import Projects from './components/Projects';
 import { AnimatePresence } from 'framer-motion'
 
@@ -25,23 +24,15 @@ function App() {
             <Navbar />
 
             <AnimatePresence exitBeforeEnter>
-              <Switch location={location} key={location.key}>
-                <Route exact path="/">
-                  <About />
-                </Route>
-                <Route path="/resume">
-                  <Resume />
-                </Route>
+              <Switch >
+                <Route exact path="/" component={About} />
                 <Route path="/projects" component={Projects} />
-                <Route>
-                  <Redirect to="/" />
-                </Route>
               </Switch>
             </AnimatePresence>
           </div>
         </div>
       </div>
-    </div>
+    </div >
 
   );
 }

@@ -39,29 +39,15 @@ const Navbar = () => {
             animate='visible'
 
         >
-            <div className="navbar__active">
-                {active}
-            </div>
 
-            <div className="navbar__items">
-                {active !== 'About' &&
-                    <Link to="/">
-                        <div className="navbar__item" onClick={() => setActive('About')}>About</div>
-                    </Link>
-                }
-                {active !== 'Resume' ?
-                    <Link to="/resume">
-                        <div className="navbar__item" onClick={() => setActive('Resume')}>Resume</div>
-                    </Link> : null
-                }
-                {active !== 'Projects' &&
-                    <Link to="/projects">
-                        <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>
-                    </Link>
-                }
-            </div>
+            <Link to="/">
+                <div className={`navbar__item ${active === 'About' ? 'navbar__active' : ''}`} onClick={() => setActive('About')}>About</div>
+            </Link>
+            <Link to="/projects">
+                <div className={`navbar__item ${active === 'Projects' ? 'navbar__active' : ''}`} onClick={() => setActive('Projects')}>Projects</div>
+            </Link>
 
-        </motion.div>
+        </motion.div >
     );
 };
 

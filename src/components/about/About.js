@@ -34,7 +34,7 @@ const About = () => {
             <h6 className="about__intro">
                 Hi ! I am Pragun Gandotra , Thankyou for visiting my Website . I provide Web Development Services , Looking forward to provide you service
             </h6>
-            <div className="row no-gutters px-3">
+            <div className="row no-gutters pr-3">
                 <div className="col-lg-6 resume-languages pl-4">
                     <h5 className="reume-language__heading">
                         Skills

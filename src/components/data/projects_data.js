@@ -1,82 +1,47 @@
-import tweetme from '../../assets/projects_images/tweetme.PNG'
-import chatapp from '../../assets/projects_images/chatapp.JPG'
-import hardware_store from '../../assets/projects_images/hardware_store.jpg'
-import portfolio from '../../assets/projects_images/portfolio.JPG'
-import new_year from '../../assets/projects_images/new_year.jpg'
-import color_classification from '../../assets/projects_images/color_classification.jpg'
-import blinking from '../../assets/projects_images/blinking.JPG'
-import COVID from '../../assets/projects_images/COVID.jpg'
-import Dev_talks from '../../assets/projects_images/Dev_talks.jpg'
+import posts from '../../assets/projects_images/postSharer.PNG'
+import expensify from '../../assets/projects_images/expensifyApp.PNG'
+import devConnector from '../../assets/projects_images/devConnector.PNG'
+import jobs from '../../assets/projects_images/jobSchedulingSys.PNG'
+import intigue from '../../assets/projects_images/intigue.PNG'
 
 const data_projects = [
     {
-        name: 'COVID 19 tracker',
-        image: COVID,
-        deployed_url: 'https://covid-19-tracker-by-sumit.web.app/',
-        github_url: 'https://github.com/Dey-Sumit/covid-19-tracker',
+        name: 'Expensify-App',
+        image: expensify,
+        deployed_url: 'https://react2-expensify-app.herokuapp.com/',
+        github_url: 'https://github.com/dicer3/expensify-app',
         category: ['react.js']
     },
 
     {
-        name: 'Dev Talks',
-        image: Dev_talks,
-        deployed_url: 'https://dev-talks.herokuapp.com/',
-        github_url: 'https://github.com/Dey-Sumit/Dev-talks',
+        name: 'Dev Connector',
+        image: devConnector,
+        deployed_url: 'https://frozen-temple-21009.herokuapp.com/',
+        github_url: 'https://github.com/dicer3/devConnector',
         category: ['node.js', 'mongoDB', 'react.js']
     },
 
     {
-        name: 'Realtime Chat App',
-        image: chatapp,
-        deployed_url: 'https://sumit-chat.netlify.app/',
-        github_url: 'https://github.com/Dey-Sumit/chat-app-socket.io-react-node',
+        name: 'Job Scheduling System',
+        image: jobs,
+        deployed_url: 'https://murmuring-river-18742.herokuapp.com/ ',
+        github_url: 'https://github.com/dicer3/Job-Scheduling-System ',
         category: ['node', 'socket.io', 'react']
     },
 
     {
-        name: 'Tweeter Clone',
-        image: tweetme,
-        deployed_url: 'http://sumaxtweetme.pythonanywhere.com/',
-        github_url: 'https://github.com/Dey-Sumit/tweetme',
+        name: 'Post Sharer',
+        image: posts,
+        deployed_url: 'https://post-share-app.netlify.app/',
+        github_url: 'https://github.com/dicer3/MEAN_course',
         category: ['django', 'react']
     },
-
-    {
-        name: 'Shop Website',
-        image: hardware_store,
-        deployed_url: '!#',
-        category: ['html_css', 'vanilla']
-    },
-
-    {
-        name: 'Dev Portfolio',
-        image: portfolio,
-        deployed_url: 'http://suprateem.herokuapp.com/',
-        category: ['vanilla']
-    },
-
-    {
-        name: 'Bengali New Year',
-        image: new_year,
-        deployed_url: 'https://dey-sumit.github.io/NewYear/',
-        category: ['vanilla']
-    },
-
-    {
-        name: 'Color Classification using tf.js',
-        image: color_classification,
-        deployed_url: '!#',
-        github_url: 'https://github.com/Dey-Sumit/color-classification',
-        category: ['node', 'machine_learning']
-    },
-
-    {
-        name: 'Blinking bubbles',
-        image: blinking,
-        deployed_url: 'https://dey-sumit.github.io/Blinking_Bubbles/',
-        github_url: 'https://github.com/Dey-Sumit/Blinking_Bubbles',
-        category: ['processing']
-    }
+    // {
+    //     name: 'Shop Website',
+    //     image: '',
+    //     deployed_url: '!#',
+    //     category: ['html_css', 'vanilla']
+    // }
 ]
 
 export default data_projects;

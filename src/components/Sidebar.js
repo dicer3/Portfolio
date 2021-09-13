@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import github from '../assets/icons/github.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import pin from '../assets/icons/pin.svg'
@@ -6,7 +6,6 @@ import tie from '../assets/icons/tie.svg'
 import mightycoder from '../assets/pragun.jpeg'
 import resume from '../assets/resume.pdf'
 import { motion } from 'framer-motion'
-import sanityClient from "../utils/sanity_client"
 const Sidebar = () => {
     const handleEmailMe = () => {
         window.open("mailto:pragungandotra7@gmail.com")
@@ -24,18 +23,6 @@ const Sidebar = () => {
             }
         }
     }
-
-    const [data, setData] = useState()
-    useEffect(() => {
-        sanityClient.fetch(
-            `*`
-        ).then(data => setData(data))
-            .catch(err => console.log("err ..", err))
-    }, [])
-
-    useEffect(() => {
-        console.log("data..", data)
-    }, [data])
     return (
         <motion.div className="sidebar"
             variants={sidebar_variant}
@@ -53,10 +40,10 @@ const Sidebar = () => {
             </a>
             <div className="sidebar__contact">
                 <div className="sidebar__item sidebar__github">
-                    <a href="!#"><img src={github} alt="github" className="sidebar__icon mr-3" />dicer3</a>
+                    <a href="https://github.com/dicer3" target="_blank"><img src={github} alt="github" className="sidebar__icon mr-3" />dicer3</a>
                 </div>
                 <div className="sidebar__item sidebar__github">
-                    <a href="!#"><img src={linkedin} alt="github" className="sidebar__icon mr-3" />pragun7</a>
+                    <a href="https://www.linkedin.com/in/pragun-gandotra-b987b2169/" target="_blank"><img src={linkedin} alt="github" className="sidebar__icon mr-3" />pragun7</a>
                 </div>
                 <div className="sidebar__location">
                     <img src={pin} alt="location" className="sidebar__icon mr-3" />

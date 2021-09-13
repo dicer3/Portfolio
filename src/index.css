@@ -128,6 +128,7 @@ a:hover {
 
 .navbar__items {
     display: flex;
+    justify-content: space-between;
 }
 
 .navbar__active {
@@ -141,7 +142,7 @@ a:hover {
     margin-right: 20px;
     text-decoration: none;
     color: #354358;
-    font-size: 1.3rem;
+    font-size: 27px;
     cursor: pointer;
 }
 
