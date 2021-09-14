@@ -69,17 +69,18 @@ a:hover {
 }
 
 .sidebar__name {
-    font-family: 'Kaushan Script';
+    font-family: 'Georgia';
+    color: #6B5B95;
     margin: 20px 0;
     font-size: 1.7rem;
 }
 
-.sidebar__name>span {
+/* .sidebar__name>span {
     color: #00F260;
-}
+} */
 
 .sidebar__item {
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
     padding-top: 6px;
     height: 40px;
     font-size: 1.05rem;
@@ -95,7 +96,10 @@ a:hover {
     background-color: #dbdddf;
     padding: 2px 0;
     margin: 20px -15px;
+}
 
+.exps{
+    padding-right: 22px;
 }
 
 .sidebar__email {
@@ -121,6 +125,13 @@ a:hover {
 @media(max-width:991px) {
     .app__main-content {
         margin: 30px 0;
+    }
+    .exps{
+        padding: 0 15px;
+    }    
+    .reume-language__heading{
+        text-align: center;
+        margin-bottom: 17px;
     }
 }
 

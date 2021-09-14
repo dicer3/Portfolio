@@ -36,12 +36,12 @@ const data_projects = [
         github_url: 'https://github.com/dicer3/MEAN_course',
         category: ['django', 'react']
     },
-    // {
-    //     name: 'Shop Website',
-    //     image: '',
-    //     deployed_url: '!#',
-    //     category: ['html_css', 'vanilla']
-    // }
+    {
+        name: 'Work Sample(Design)',
+        image: intigue,
+        deployed_url: 'https://design-work-sample.netlify.app/',
+        category: ['html_css', 'vanilla']
+    }
 ]
 
 export default data_projects;

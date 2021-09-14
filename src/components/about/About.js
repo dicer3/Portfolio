@@ -34,7 +34,7 @@ const About = () => {
             <h6 className="about__intro">
                 Hi ! I am Pragun Gandotra , Thankyou for visiting my Website . I provide Web Development Services , Looking forward to provide you service
             </h6>
-            <div className="row no-gutters pr-3">
+            <div className="row no-gutters">
                 <div className="col-lg-6 resume-languages pl-4">
                     <h5 className="reume-language__heading">
                         Skills
@@ -45,27 +45,29 @@ const About = () => {
                         }
                     </div>
                 </div>
-                <div className="col-lg-6 resume-languages">
+                <div className="col-lg-6 mt-3 m-md-0">
                     <h5 className="reume-language__heading">
                         Experience
                     </h5>
-                    {
-                        experiences.map((exp) =>
-                            <div>
-                                <div className="d-flex justify-content-between">
-                                    <div ><span className="font-weight-bold"> {exp.company}</span> <small className="exp-pos">{exp.position}</small></div>  <span className="exp-time">{exp.time}</span>
-                                </div>
-                                <span className="exp-work">{exp.work}</span>
-                                <p className="tech-used">Technologies Used - {exp.TechUsed}</p>
-                            </div>
-                        )
-                    }
+                    <div className="exps">
+                        {
 
-                    <h5 className="reume-language__heading">
-                        Education
-                    </h5>
-                    <div className="d-flex justify-content-between">
-                        <div ><span className="font-weight-bold"> Thapar University ,Patiala</span> </div>  <span className="exp-time">Aug 2016 - June 2020</span>
+                            experiences.map((exp) =>
+                                <div>
+                                    <div className="d-flex justify-content-between">
+                                        <div ><span className="font-weight-bold"> {exp.company}</span> <small className="exp-pos">{exp.position}</small></div>  <span className="exp-time">{exp.time}</span>
+                                    </div>
+                                    <span className="exp-work">{exp.work}</span>
+                                    <p className="tech-used">Technologies Used - {exp.TechUsed}</p>
+                                </div>
+                            )
+                        }
+                        <h5 className="reume-language__heading ">
+                            Education
+                        </h5>
+                        <div className="d-flex justify-content-between">
+                            <div ><span className="font-weight-bold"> Thapar University ,Patiala</span> </div>  <span className="exp-time">Aug 2016 - June 2020</span>
+                        </div>
                     </div>
                 </div>
             </div>

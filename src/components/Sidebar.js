@@ -3,6 +3,8 @@ import github from '../assets/icons/github.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import pin from '../assets/icons/pin.svg'
 import tie from '../assets/icons/tie.svg'
+import mail from '../assets/icons/gmail.svg'
+import phone from '../assets/icons/phone.png'
 import mightycoder from '../assets/pragun.jpeg'
 import resume from '../assets/resume.pdf'
 import { motion } from 'framer-motion'
@@ -48,8 +50,14 @@ const Sidebar = () => {
                 <div className="sidebar__location">
                     <img src={pin} alt="location" className="sidebar__icon mr-3" />
                     Jammu, India</div>
-                <div className="sidebar__item">pragungandotra7@gmail.com</div>
-                <div className="sidebar__item">+918899850492</div>
+                <div className="sidebar__location my-2">
+                    <img src={mail} alt="location" className="sidebar__icon mr-1" />
+                    pragungandotra7@gmail.com</div>
+                <div className="sidebar__location">
+                    <img src={phone} alt="location" className="sidebar__icon mr-2 mb-2" />
+                    +918899850492</div>
+                {/* <div className="sidebar__item">pragungandotra7@gmail.com</div>
+                <div className="pb-2">+918899850492</div> */}
             </div>
             <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>email me</div>
         </motion.div>
