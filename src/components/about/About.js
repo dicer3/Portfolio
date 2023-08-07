@@ -57,18 +57,20 @@ const About = () => {
                                     <div className="d-flex justify-content-between">
                                         <div ><span className="font-weight-bold"> {exp.company}</span> <small className="exp-pos">{exp.position}</small></div>  <span className="exp-time">{exp.time}</span>
                                     </div>
-                                    <span className="exp-work">{exp.work}</span>
+                                    <span className="exp-work" dangerouslySetInnerHTML={{__html: exp.work}}></span>
                                     <p className="tech-used">Technologies Used - {exp.TechUsed}</p>
                                 </div>
                             )
                         }
+                    </div>
+                    <div className='edu'>
                         <h5 className="reume-language__heading ">
                             Education
                         </h5>
                         <div className="d-flex justify-content-between">
                             <div ><span className="font-weight-bold"> Thapar University ,Patiala</span> </div>  <span className="exp-time">Aug 2016 - June 2020</span>
                         </div>
-                    </div>
+                    </div>    
                 </div>
             </div>
         </motion.div>

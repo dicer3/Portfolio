@@ -9,7 +9,7 @@ const data_projects = [
   {
     name: "Expensify-App",
     image: expensify,
-    deployed_url: "https://react2-expensify-app.herokuapp.com/",
+    deployed_url: "https://expensify-app-xi.vercel.app/",
     github_url: "https://github.com/dicer3/expensify-app",
     category: ["react.js"],
   },
@@ -17,7 +17,7 @@ const data_projects = [
   {
     name: "Dev Connector",
     image: devConnector,
-    deployed_url: "https://frozen-temple-21009.herokuapp.com/",
+    deployed_url: "https://devconnector-zi7l.onrender.com/",
     github_url: "https://github.com/dicer3/devConnector",
     category: ["node.js", "mongoDB", "react.js"],
   },
@@ -25,7 +25,7 @@ const data_projects = [
   {
     name: "Job Scheduling System",
     image: jobs,
-    deployed_url: "https://murmuring-river-18742.herokuapp.com/ ",
+    deployed_url: "https://job-scheduling-system.onrender.com/",
     github_url: "https://github.com/dicer3/Job-Scheduling-System ",
     category: ["node", "socket.io", "react"],
   },

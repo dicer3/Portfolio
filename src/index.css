@@ -29,7 +29,8 @@ a:hover {
 }
 
 .app__row {
-  height: 86vh;
+  height: 80vh;
+  margin-top: 25px;
 }
 
 .app__main-content {
@@ -112,6 +113,13 @@ a:hover {
 
 .exps {
   padding-right: 22px;
+  height: 250px;
+  overflow: auto;
+}
+
+.edu {
+  padding-right: 22px;
+  margin-top: 5px;
 }
 
 .sidebar__email {
@@ -251,6 +259,7 @@ a:hover {
 .tech-used {
   color: #2f4f4f;
   font-size: 14px;
+  word-break: break-all;
 }
 
 .exp-work {
@@ -273,9 +282,9 @@ a:hover {
 
 /* projects */
 .projects {
-  height: 70vh;
+  /* height: 70vh; */
   padding-top: 30px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .projectCard__wrapper {
