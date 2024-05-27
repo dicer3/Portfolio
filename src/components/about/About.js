@@ -51,14 +51,13 @@ const About = () => {
                     </h5>
                     <div className="exps">
                         {
-
                             experiences.map((exp) =>
                                 <div>
                                     <div className="d-flex justify-content-between">
                                         <div ><span className="font-weight-bold"> {exp.company}</span> <small className="exp-pos">{exp.position}</small></div>  <span className="exp-time">{exp.time}</span>
                                     </div>
                                     <span className="exp-work" dangerouslySetInnerHTML={{__html: exp.work}}></span>
-                                    <p className="tech-used">Technologies Used - {exp.TechUsed}</p>
+                                    <p className="tech-used" dangerouslySetInnerHTML={{__html: `Technologies Used - ${exp.TechUsed}`}}></p>
                                 </div>
                             )
                         }

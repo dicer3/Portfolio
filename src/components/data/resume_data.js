@@ -8,11 +8,35 @@ import bootstrap from "../../assets/icons/bootstrap.svg";
 import scss from "../../assets/icons/scss.svg";
 import mongo from "../../assets/icons/mongo.svg";
 import sql from "../../assets/icons/sql.svg";
+import java from "../../assets/icons/java.svg"
+import springboot from "../../assets/icons/springboot.svg"
+import hibernate from "../../assets/icons/hibernate.svg"
+
 import graphql from "../../assets/icons/graphql.svg";
 import nextJS from "../../assets/icons/next-logo.png";
 import jquery from "../../assets/icons/jquery.svg";
 
 const languages = [
+  {
+    icon: java,
+    name: "Java",
+    level: "85",
+  },
+  {
+    icon: springboot,
+    name: "SpringBoot",
+    level: "80",
+  },
+  {
+    icon: sql,
+    name: "SQL",
+    level: "85",
+  },
+  {
+    icon: mongo,
+    name: "MongoDB",
+    level: "85",
+  },
   {
     icon: react,
     name: "React.js",
@@ -28,11 +52,11 @@ const languages = [
     name: "Node.js",
     level: "80",
   },
-  {
-    icon: typescript,
-    name: "TypeScript",
-    level: "80",
-  },
+  // {
+  //   icon: typescript,
+  //   name: "TypeScript",
+  //   level: "80",
+  // },
   // {
   //   icon: angular,
   //   name: "Angular",
@@ -51,16 +75,6 @@ const languages = [
   {
     icon: scss,
     name: "CSS/SCSS",
-    level: "85",
-  },
-  {
-    icon: mongo,
-    name: "MongoDB",
-    level: "85",
-  },
-  {
-    icon: sql,
-    name: "SQL",
     level: "85",
   }
 

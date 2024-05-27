@@ -4,20 +4,39 @@ export default [
     company: "Paymentus",
     position: "Full Stack Developer",
     time: "July 2021 - Present",
-    work: ` ${dot} Learnt the concepts of microservices and developed them in Node.js with db as mongoDB <br />
-    ${dot} Made changes in Search Interface of IPN Dashboard when user wants to query search on different 
-    things , applied condition in backend for sending mongo query <br />
-    ${dot} Designed the new Queue Task Page in Drutas Project , made reusable filter components from
-    Kendo React and made SQL Procedure for handling that <br /> `,
-    TechUsed: "React,Redux,NodeJS,SQL,MongoDB,Typescript,Kubernetes",
+    work: `${dot} Worked on Project Tracking Product named
+    Drutas made frontend in React did styling using
+    Bootstrap and SCSS , handled state management
+    in React Context and Redux <br />
+    ${dot} Made Microservices in Springboot connected
+    with Database MySQL using ORM Tools like
+    JPA/Hibernate <br/>
+    ${dot} Integrated Redis with Spring Boot to cache data,
+    reducing API response times by avoiding
+    database hits when data is already available <br />
+    ${dot} Made Cron Job in Springboot for Daily Digest
+    Emails to all active users of drutas using
+    SendGrid Email Service <br/>
+    ${dot} The Communication between Cron Job
+    Microservice and Email Service was done using
+    RestTemplate in Sprinboot(sending HTTP
+    Request) which was later refactored and Kafka
+    Architecture was used instead of HTTP Rest
+    Template <br/>`,
+    TechUsed: "Java,Springboot,JPA,SQL,Sendgrid, <br/> Redis,Kafka,React,Redux",
   },
   {
     company: "Paymentus",
     position: "Full Stack Developer",
     time: "July 2020 - March 2021",
-    work: `${dot} made scraping methods using puppeteer library and tested them using different billers <br/>
-    ${dot} made different pages using Bootstrap and SCSS`,
-    TechUsed: "NodeJs , Bootsrap, SCSS",
+    work: `${dot} made IPN dashboard interfaces in React(used
+      React Hooks , React Context and Redux) 
+      integrated the backend in NodeJs and used
+      mongoDB as database. <br/>
+      ${dot} made mircoservices in NodeJS and connected
+      with database MongoDB <br/>
+      ${dot} styled different pages using Bootstrap and SCSS <br/>`,
+    TechUsed: " NodeJs,ReactJS,MongoDB,SCSS",
   },
   {
     company: "Holidify",
@@ -26,7 +45,7 @@ export default [
     work: `${dot} Designed a Project where user could see routes from city to another.Made appropriate 
     algorithm for backend and designed the frontend <br />
     ${dot} Designed the CMS so content Team could perform CRUD operation in Holidfiy website `,
-    TechUsed: "Bootstrap,SCSS,Javascript,SourceTree",
+    TechUsed: "Java,SpringBoot,SCSS,Javascript,SQL",
   }
   // {
   //     "company": "Mindpeers",
